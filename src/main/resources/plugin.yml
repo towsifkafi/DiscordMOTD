@@ -1,0 +1,7 @@
+name: DiscordMOTD
+version: '${project.version}'
+main: cf.towsifkafi.discordmotd.DiscordMOTD
+prefix: [ DiscordMOTD ]
+depend: [ DiscordSRV, PlaceholderAPI ]
+authors: [ TowsifKafi ]
+description: A plugin that gets last message from a discord channel and sets it as a placeholder
