@@ -18,6 +18,7 @@ public class DiscordSRVListener {
         this.plugin = pl;
     }
 
+
     @Subscribe
     public void discordReadyEvent(DiscordReadyEvent event) {
 

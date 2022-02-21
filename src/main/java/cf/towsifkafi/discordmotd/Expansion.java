@@ -40,10 +40,7 @@ public class Expansion extends PlaceholderExpansion {
     public String onPlaceholderRequest(Player p, String params) {
 
         if (params.equalsIgnoreCase("motd")) {
-            TextChannel channel = DiscordUtil.getTextChannelById(DiscordMOTD.getInstance().getConfig().getString("motd-channel"));
-            channel.getHistory().retrievePast(1).queue(messages -> {
-                this.motd = messages.get(0).getContentDisplay();
-            });
+            this.motd = DiscordMOTD.getMotd();
             return this.motd;
         }
 
